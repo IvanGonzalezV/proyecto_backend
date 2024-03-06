@@ -2,9 +2,14 @@ import express from 'express';
 import { ProductManager } from './ProductManager.js';
 
 const app = express();
-const port = 8080; // este es el puerto a usar
+const port = 8080;
 
-// Ruta para tener tods los productos
+// Ruta para la raíz, simplemente redirige al listado de productos
+app.get('/', (req, res) => {
+    res.redirect('/products');
+});
+
+// Ruta para obtener todos los productos
 app.get('/products', (req, res) => {
     const productManager = new ProductManager('./Productos.json');
     const limit = req.query.limit ? parseInt(req.query.limit) : undefined;
@@ -17,7 +22,7 @@ app.get('/products', (req, res) => {
     }
 });
 
-// Ruta para tener el prodcto por ID
+// Ruta para obtener un producto por su ID
 app.get('/products/:pid', (req, res) => {
     const productManager = new ProductManager('./Productos.json');
     const productId = parseInt(req.params.pid);
@@ -30,8 +35,7 @@ app.get('/products/:pid', (req, res) => {
     }
 });
 
-// Inicia el servidor port 8080
+// Inicia el servidor
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
-
