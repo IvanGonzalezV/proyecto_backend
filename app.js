@@ -4,12 +4,12 @@ import { ProductManager } from './ProductManager.js';
 const app = express();
 const port = 8080;
 
-// Ruta para la raíz, simplemente redirige al listado de productos
+// Ruta raíz, redirige al listdo de producto
 app.get('/', (req, res) => {
     res.redirect('/products');
 });
 
-// Ruta para obtener todos los productos
+// Ruta para obtner todos los products
 app.get('/products', (req, res) => {
     const productManager = new ProductManager('./Productos.json');
     const limit = req.query.limit ? parseInt(req.query.limit) : undefined;
@@ -22,7 +22,7 @@ app.get('/products', (req, res) => {
     }
 });
 
-// Ruta para obtener un producto por su ID
+// Ruta para obtener productos por ID
 app.get('/products/:pid', (req, res) => {
     const productManager = new ProductManager('./Productos.json');
     const productId = parseInt(req.params.pid);
