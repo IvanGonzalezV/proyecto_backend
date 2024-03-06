@@ -6,10 +6,24 @@ Este proyecto consiste en una aplicación de gestión de productos que permite a
 
 La aplicación de Gestión de Productos está diseñada para ayudar a los usuarios a administrar el inventario de productos de manera eficiente. Permite agregar nuevos productos con información detallada, como título, descripción, precio, imagen, código y stock. Además, proporciona la funcionalidad de buscar productos por su código único y listar todos los productos disponibles.
 
-## Tabla de Contenidos
+## Uso
 
-1. [Uso](#uso)
-2. [Contribución](#contribución)
+Puedes probar la funcionalidad de la aplicación utilizando herramientas como `curl` en Bash. Aquí tienes algunos ejemplos de cómo puedes interactuar con la aplicación utilizando `curl`:
+Ademas de npm y node
 
-```bash
-git clone [<URL_del_repositorio>](https://github.com/IvanGonzalezV/Clase_02/tree/main)https://github.com/IvanGonzalezV/Clase_02/tree/main
+- Para obtener todos los productos:
+  ```bash
+  curl http://localhost:8080/products
+  curl http://localhost:8080/products?limit=5
+
+Contribución
+¡Tu contribución es bienvenida! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+Haz un fork del repositorio
+Crea una nueva rama (git checkout -b feature/MejoraGenial)
+Realiza tus cambios y haz commit (git commit -am 'Agrega una Mejora Genial')
+Haz push a la rama (git push origin feature/MejoraGenial)
+Abre un Pull Request
+
+Gracias por contribuir al proyecto!
+
