@@ -1,0 +1,16 @@
+{
+  "name": "entrega",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en una aplicación de gestión de productos que permite agregar nuevos productos, verificar la disponibilidad de productos por su código, y obtener una lista de todos los productos disponibles.",
+  "main": "entrega02.js",
+  "type": "module",
+  "scripts": {
+    "start": "node entrega02.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

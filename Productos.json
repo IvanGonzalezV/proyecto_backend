@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Example Product",
+    "description": "This is an Example Product",
+    "price": 200,
+    "thumbnail": "Pending Link",
+    "code": "sell_0122",
+    "stock": 16
+  },
+  {
+    "id": 2,
+    "title": "Otro Producto",
+    "description": "Este es un Nuevo Producto",
+    "price": 120,
+    "thumbnail": "Otra Imagen",
+    "code": "sell_0122",
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "title": "Example Product",
+    "description": "This is an Example Product",
+    "price": 200,
+    "thumbnail": "Pending Link",
+    "code": "sell_0122",
+    "stock": 16
+  },
+  {
+    "id": 4,
+    "title": "Otro Producto",
+    "description": "Este es un Nuevo Producto",
+    "price": 120,
+    "thumbnail": "Otra Imagen",
+    "code": "sell_0122",
+    "stock": 10
+  }
+]
